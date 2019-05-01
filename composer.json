@@ -1,0 +1,29 @@
+{
+	"name": "tsolucio/DecisionTable",
+	"type": "corebos-module",
+	"properties": {
+		"name": "coreBOS Decision Table",
+		"description": "Generic Decision Table rules module for coreBOS",
+		"keywords": ["DMN","decision tree","decsion table"],
+		"homepage": "http://corebos.org/documentation/doku.php?id=en:adminmanual:businessmappings:decisiontable",
+		"version": "1.0",
+		"time": "2019-04-30",
+		"license": "MIT",
+		"extra": {
+			"price": "0",
+			"distribution": "Free"
+		},
+		"authors": [
+					{
+					"name": "JPL TSolucio, S.L.",
+					"email": "info(at)tsolucio(dot)com"
+					}
+		],
+		"support": {
+				mail": "info(at)tsolucio(dot)com",
+				"issues": "https://github.com/tsolucio/DecisionTable",
+				"forum": "http://discussions.corebos.org/",
+				"source": "https://github.com/tsolucio/DecisionTable"
+		}
+	}
+}
