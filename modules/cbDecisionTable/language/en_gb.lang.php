@@ -23,6 +23,7 @@ $mod_strings = array(
 	'cbdecisiontable_no' => 'Rule Nº',
 	'cbdtdecides' => 'Decides',
 	'cbdtgroup' => 'Grouping',
+	'sequence' => 'Sequence',
 	'cond1' => 'Condition 1',
 	'cond2' => 'Condition 2',
 	'cond3' => 'Condition 3',

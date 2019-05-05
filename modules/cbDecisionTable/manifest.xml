@@ -21,6 +21,7 @@
   `cbdtname` varchar(210) NOT NULL,
   `cbdtdecides` varchar(250) default NULL,
   `cbdtgroup` varchar(250) default NULL,
+  `sequence` varchar(20) default NULL,
   `cond1` varchar(250) default NULL,
   `cond2` varchar(250) default NULL,
   `cond3` varchar(250) default NULL,
@@ -169,6 +170,26 @@
 <masseditable>0</masseditable>
 </field>
 <field>
+<fieldname>sequence</fieldname>
+<uitype>1</uitype>
+<columnname>sequence</columnname>
+<tablename>vtiger_cbdecisiontable</tablename>
+<generatedtype>1</generatedtype>
+<fieldlabel>sequence</fieldlabel>
+<readonly>1</readonly>
+<presence>0</presence>
+<selected>0</selected>
+<sequence>7</sequence>
+<maximumlength>100</maximumlength>
+<typeofdata>V~O</typeofdata>
+<quickcreate>0</quickcreate>
+<quickcreatesequence>0</quickcreatesequence>
+<displaytype>1</displaytype>
+<info_type>BAS</info_type>
+<helpinfo><![CDATA[]]></helpinfo>
+<masseditable>0</masseditable>
+</field>
+<field>
 <fieldname>createdtime</fieldname>
 <uitype>70</uitype>
 <columnname>createdtime</columnname>
@@ -178,7 +199,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>7</sequence>
+<sequence>8</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>DT~O</typeofdata>
 <quickcreate>3</quickcreate>
@@ -198,7 +219,7 @@
 <readonly>1</readonly>
 <presence>0</presence>
 <selected>0</selected>
-<sequence>8</sequence>
+<sequence>9</sequence>
 <maximumlength>100</maximumlength>
 <typeofdata>DT~O</typeofdata>
 <quickcreate>3</quickcreate>
