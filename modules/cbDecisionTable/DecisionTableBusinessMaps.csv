@@ -1,0 +1,162 @@
+"Map Name","Map Number","Map Type","Target Module","Content","Assigned To","Created Time","Modified Time","Created By","Description"
+"SeasonDish twocolumns","BMAP-0000036","DecisionTable","cbDecisionTable","<decision>
+<hitPolicy>U</hitPolicy>
+<rules>
+<rule>
+  <sequence>1</sequence>
+  <decisionTable>
+    <module>cbDecisionTable</module>
+    <orderby>sequence</orderby>  <!-- column to order the records by -->
+    <searches>
+      <search>
+        <condition>
+          <input>season</input>  <!-- context variable name -->
+          <operation>e</operation>  <!-- QueryGenerator operators -->
+          <field>condstr1</field>  <!-- fieldname of module -->
+        </condition>
+        <condition>
+          <input>guestcount</input>  <!-- context variable name -->
+          <operation>m</operation>  <!-- QueryGenerator operators -->
+          <field>condnum1</field>  <!-- fieldname of module -->
+        </condition>
+        <condition>
+          <input>guestcount</input>  <!-- context variable name -->
+          <operation>h</operation>  <!-- QueryGenerator operators -->
+          <field>condnum2</field>  <!-- fieldname of module -->
+        </condition>
+      </search>
+    </searches>
+    <output>valstr1</output>  <!-- fieldname -->
+  </decisionTable>
+  <output>FieldValue</output>
+</rule>
+</rules>
+</decision>","admin","2019-05-05 19:41:50","2019-05-05 19:46:49","admin",""
+"SeasonDish onecolumn","BMAP-0000037","DecisionTable","cbDecisionTable","<decision>
+<hitPolicy>F</hitPolicy>
+<rules>
+<rule>
+  <sequence>1</sequence>
+  <decisionTable>
+    <module>cbDecisionTable</module>
+    <conditions>
+     <condition>
+      <input>onecolumn</input>
+      <operation>e</operation>
+      <field>cbdtgroup</field>
+     </condition>
+    </conditions>
+    <orderby>sequence</orderby>  <!-- column to order the records by -->
+    <searches>
+      <search>
+        <condition>
+          <input>season</input>  <!-- context variable name -->
+          <operation>e</operation>  <!-- QueryGenerator operators -->
+          <field>condstr1</field>  <!-- fieldname of module -->
+        </condition>
+        <condition>
+          <input>guestcount</input>  <!-- context variable name -->
+          <operation>h</operation>  <!-- QueryGenerator operators -->
+          <field>condnum1</field>  <!-- fieldname of module -->
+        </condition>
+      </search>
+    </searches>
+    <output>valstr1</output>  <!-- fieldname -->
+  </decisionTable>
+  <output>FieldValue</output>
+</rule>
+</rules>
+</decision>","admin","2019-05-05 19:55:57","2019-05-05 21:53:19","admin",""
+"Employee Salary Bonus Amount","BMAP-0000038","DecisionTable","cbDecisionTable","<decision>
+<hitPolicy>G</hitPolicy>
+<aggregate>sum</aggregate>
+<rules>
+<rule>
+  <sequence>1</sequence>
+  <decisionTable>
+    <module>cbDecisionTable</module>
+    <conditions>
+     <condition>
+      <input>salarybonus</input>
+      <operation>e</operation>
+      <field>cbdtgroup</field>
+     </condition>
+    </conditions>
+    <orderby>sequence</orderby>  <!-- column to order the records by -->
+    <searches>
+      <search>
+        <condition>
+          <input>numyears</input>  <!-- context variable name -->
+          <operation>m</operation>  <!-- QueryGenerator operators -->
+          <field>condnum1</field>  <!-- fieldname of module -->
+        </condition>
+      </search>
+    </searches>
+    <output>valnum1</output>  <!-- fieldname -->
+  </decisionTable>
+  <output>FieldValue</output>
+</rule>
+</rules>
+</decision>","admin","2019-05-05 21:54:08","2019-05-05 22:22:30","admin",""
+"Car Insurance Fee","BMAP-0000039","DecisionTable","cbDecisionTable","<decision>
+<hitPolicy>G</hitPolicy>
+<aggregate>min</aggregate>
+<rules>
+<rule>
+  <sequence>1</sequence>
+  <decisionTable>
+    <module>cbDecisionTable</module>
+    <conditions>
+     <condition>
+      <input>insurancefee</input>
+      <operation>e</operation>
+      <field>cbdtgroup</field>
+     </condition>
+    </conditions>
+    <orderby>sequence</orderby>  <!-- column to order the records by -->
+    <searches>
+      <search>
+        <condition>
+          <input>numyears</input>  <!-- context variable name -->
+          <operation>m</operation>  <!-- QueryGenerator operators -->
+          <field>condnum1</field>  <!-- fieldname of module -->
+        </condition>
+      </search>
+    </searches>
+    <output>valnum1</output>  <!-- fieldname -->
+  </decisionTable>
+  <output>FieldValue</output>
+</rule>
+</rules>
+</decision>","admin","2019-05-05 22:17:05","2019-05-05 22:19:24","admin",""
+"Employee Salary Bonuses","BMAP-0000040","DecisionTable","cbDecisionTable","<decision>
+<hitPolicy>G</hitPolicy>
+<aggregate>count</aggregate>
+<rules>
+<rule>
+  <sequence>1</sequence>
+  <decisionTable>
+    <module>cbDecisionTable</module>
+    <conditions>
+     <condition>
+      <input>salarybonus</input>
+      <operation>e</operation>
+      <field>cbdtgroup</field>
+     </condition>
+    </conditions>
+    <orderby>sequence</orderby>  <!-- column to order the records by -->
+    <searches>
+      <search>
+        <condition>
+          <input>numyears</input>  <!-- context variable name -->
+          <operation>m</operation>  <!-- QueryGenerator operators -->
+          <field>condnum1</field>  <!-- fieldname of module -->
+        </condition>
+      </search>
+    </searches>
+    <output>valnum1</output>  <!-- fieldname -->
+  </decisionTable>
+  <output>FieldValue</output>
+</rule>
+</rules>
+</decision>","admin","2019-05-05 22:22:50","2019-05-05 22:22:50","admin",""
