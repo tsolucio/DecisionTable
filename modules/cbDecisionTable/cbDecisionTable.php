@@ -21,6 +21,7 @@ class cbDecisionTable extends CRMEntity {
 	/** Indicator if this is a custom module or standard module */
 	public $IsCustomModule = true;
 	public $HasDirectImageField = false;
+	public $moduleIcon = array('library' => 'standard', 'containerClass' => 'slds-icon_container slds-icon-standard-account', 'class' => 'slds-icon', 'icon'=>'decision');
 
 	/**
 	 * Mandatory table for supporting custom fields.
@@ -54,20 +55,26 @@ class cbDecisionTable extends CRMEntity {
 		/* Format: Field Label => array(tablename => columnname) */
 		// tablename should not have prefix 'vtiger_'
 		'cbdtname'=> array('cbdecisiontable' => 'cbdtname'),
-		'cbdtdecides'=> array('cbdecisiontable' => 'cbdtdecides'),
-		'cond1'=> array('cbdecisiontable' => 'cond1'),
-		'cond2'=> array('cbdecisiontable' => 'cond2'),
-		'val1'=> array('cbdecisiontable' => 'val1'),
-		'val2'=> array('cbdecisiontable' => 'val2'),
+		'cbdtgroup'=> array('cbdecisiontable' => 'cbdtgroup'),
+		'sequence'=> array('cbdecisiontable' => 'sequence'),
+		'condstr1'=> array('cbdecisiontable' => 'condstr1'),
+		'condstr2'=> array('cbdecisiontable' => 'condstr2'),
+		'condnum1'=> array('cbdecisiontable' => 'condnum1'),
+		'condnum2'=> array('cbdecisiontable' => 'condnum2'),
+		'valstr1'=> array('cbdecisiontable' => 'valstr1'),
+		'valnum1'=> array('cbdecisiontable' => 'valnum1'),
 	);
 	public $list_fields_name = array(
 		/* Format: Field Label => fieldname */
 		'cbdtname'=> 'cbdtname',
-		'cbdtdecides'=> 'cbdtdecides',
-		'cond1'=> 'cond1',
-		'cond2'=> 'cond2',
-		'val1'=> 'val1',
-		'val2'=> 'val2',
+		'cbdtgroup'=> 'cbdtgroup',
+		'sequence'=> 'sequence',
+		'condstr1'=> 'condstr1',
+		'condstr2'=> 'condstr2',
+		'condnum1'=> 'condnum1',
+		'condnum2'=> 'condnum2',
+		'valstr1'=> 'valstr1',
+		'valnum1'=> 'valnum1',
 	);
 
 	// Make the field link to detail view from list view (Fieldname)
@@ -78,20 +85,26 @@ class cbDecisionTable extends CRMEntity {
 		/* Format: Field Label => array(tablename => columnname) */
 		// tablename should not have prefix 'vtiger_'
 		'cbdtname'=> array('cbdecisiontable' => 'cbdtname'),
-		'cbdtdecides'=> array('cbdecisiontable' => 'cbdtdecides'),
-		'cond1'=> array('cbdecisiontable' => 'cond1'),
-		'cond2'=> array('cbdecisiontable' => 'cond2'),
-		'val1'=> array('cbdecisiontable' => 'val1'),
-		'val2'=> array('cbdecisiontable' => 'val2'),
+		'cbdtgroup'=> array('cbdecisiontable' => 'cbdtgroup'),
+		'sequence'=> array('cbdecisiontable' => 'sequence'),
+		'condstr1'=> array('cbdecisiontable' => 'condstr1'),
+		'condstr2'=> array('cbdecisiontable' => 'condstr2'),
+		'condnum1'=> array('cbdecisiontable' => 'condnum1'),
+		'condnum2'=> array('cbdecisiontable' => 'condnum2'),
+		'valstr1'=> array('cbdecisiontable' => 'valstr1'),
+		'valnum1'=> array('cbdecisiontable' => 'valnum1'),
 	);
 	public $search_fields_name = array(
 		/* Format: Field Label => fieldname */
 		'cbdtname'=> 'cbdtname',
-		'cbdtdecides'=> 'cbdtdecides',
-		'cond1'=> 'cond1',
-		'cond2'=> 'cond2',
-		'val1'=> 'val1',
-		'val2'=> 'val2',
+		'cbdtgroup'=> 'cbdtgroup',
+		'sequence'=> 'sequence',
+		'condstr1'=> 'condstr1',
+		'condstr2'=> 'condstr2',
+		'condnum1'=> 'condnum1',
+		'condnum2'=> 'condnum2',
+		'valstr1'=> 'valstr1',
+		'valnum1'=> 'valnum1',
 	);
 
 	// For Popup window record selection
