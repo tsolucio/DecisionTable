@@ -160,3 +160,38 @@
 </rule>
 </rules>
 </decision>","admin","2019-05-05 22:22:50","2019-05-05 22:22:50","admin",""
+"SeasonDish Expression","BMAP-0000041","DecisionTable","cbDecisionTable","<decision>
+<hitPolicy>U</hitPolicy>
+<rules>
+<rule>
+  <sequence>1</sequence>
+  <expression><![CDATA[if AND('$[season]'=='Fall', $[guestcount]<=8) then 'Spareribs' else '__DoesNotPass__' end]]></expression>
+  <output>ExpressionResult</output>
+</rule>
+<rule>
+  <sequence>2</sequence>
+  <expression><![CDATA[if AND('$[season]'=='Winter', $[guestcount]<=8) then 'Roastbeef' else '__DoesNotPass__' end]]></expression>
+  <output>ExpressionResult</output>
+</rule>
+<rule>
+  <sequence>3</sequence>
+  <expression><![CDATA[if AND('$[season]'=='Spring', $[guestcount]<=4) then 'Dry Aged Gourmet Steak' else '__DoesNotPass__' end]]></expression>
+  <output>ExpressionResult</output>
+</rule>
+<rule>
+  <sequence>4</sequence>
+  <expression><![CDATA[if AND('$[season]'=='Spring', AND($[guestcount]>=5, $[guestCount]<=8)) then 'Steak' else '__DoesNotPass__' end]]></expression>
+  <output>ExpressionResult</output>
+</rule>
+<rule>
+  <sequence>5</sequence>
+  <expression><![CDATA[if AND(OR('$[season]'=='Fall', OR('$[season]'=='Winter', '$[season]'=='Spring')), $[guestcount]>8) then 'Stew' else '__DoesNotPass__' end]]></expression>
+  <output>ExpressionResult</output>
+</rule>
+<rule>
+  <sequence>6</sequence>
+  <expression><![CDATA[if '$[season]'=='Summer' then 'Light Salad and a nice Steak' else '__DoesNotPass__' end]]></expression>
+  <output>ExpressionResult</output>
+</rule>
+</rules>
+</decision>","admin","2019-05-06 08:02:36","2019-05-06 09:03:18","admin",""
